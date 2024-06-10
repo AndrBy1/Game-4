@@ -117,10 +117,6 @@ class Lvl0 extends Phaser.Scene {
         this.checkText.visible = false;
 
         // debug key listener (assigned to D key)
-        this.input.keyboard.on('keydown-D', () => {
-            this.physics.world.drawDebug = this.physics.world.drawDebug ? false : true
-            this.physics.world.debugGraphic.clear()
-        }, this);
 
         my.vfx.walking = this.add.particles(0, 0, "kenny-particles", {
             frame: ['dirt_02.png', 'dirt_03.png'],
